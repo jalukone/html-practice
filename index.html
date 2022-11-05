@@ -5,11 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/layout/grid-layout.css">
+  <link rel="stylesheet" href="css/header/nav.css">
+  <link rel="stylesheet" href="css/header/logo.css">
+  <link rel="stylesheet" href="css/header/list-link.css">
+  <link rel="stylesheet" href="css/header/nav-btn.css">
   <title>Pasteleria</title>
 </head>
 
 <body>
+  <div class="grid-layout">
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__wrapper-logo">
+          <a href="#" class="header__logo-link">
+            <img class="header__logo--image" src="images/logo.svg" alt="Logo">
+            <span class="header__logo--name">Molly's Cake</span>
+          </a>
+        </div>
+        <ul class="header__list">
+          <li><a href="#" class="header__link">Inicio</a></li>
+          <li><a href="#" class="header__link">Contacto</a></li>
+          <li><a href="/portafolio.html" class="header__link">Portafolio</a></li>
+          <li><a href="#" class="header__link">Blog</a></li>
+        </ul>
+        <div class="header__mobile-wrapper"></div>
+        <div class="header__mobile-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+  </div>
 
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+.header__list {
+  display: flex;
+  list-style-type: none;
+  z-index: 2;
+}
+.header__link {
+  text-decoration: none;
+  color: #2a363b;
+  padding: 0 1em;
+}
+.header__link:hover {
+  color: #fecea8;
+}
+
+@media screen and (max-width: 65em) {
+  .header__list {
+    display: none;
+    flex-basis: 80%;
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .header__list.active {
+    display: flex;
+  }
+  .header__link {
+    opacity: 0;
+    position: relative;
+    left: -50%;
+    font-size: 1.5em;
+    color: #2a363b;
+    font-size: 2em;
+  }
+  .header__link.active {
+    opacity: 1;
+    transition: 0.75s;
+    left: 0;
+  }
+}

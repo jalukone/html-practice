@@ -1,0 +1,28 @@
+.header__wrapper-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #fecea8;
+}
+.header__logo--image {
+  height: 60px;
+}
+.header__logo--name {
+  padding-left: 1em;
+  font-size: 1.35em;
+}
+
+@media screen and (max-width: 65em) {
+  .header__logo--name {
+    padding: 0.2em 0 0 0.5em;
+    font-size: 1.75em;
+  }
+}
